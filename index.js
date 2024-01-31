@@ -8,7 +8,7 @@ function init () {
         teamsArray.forEach(team => {
             const teamCard = document.createElement('div')
             teamCard.classList = "card"
-            teamsList.append(teamCard)
+            // teamsList.append(teamCard)
 
             const teamName = document.createElement('h2')
             teamName.innerHTML = team.full_name
@@ -19,27 +19,40 @@ function init () {
             teamCard.append(teamLogo)
 
             const trophyCount = document.createElement('p')
-            trophyCount.innerHTML = 
+            trophyCount.innerHTML = "number of trophies"
             teamCard.append(trophyCount)
 
-            const rosterWest = document.getElementById("western-conference")
-            const rosterEast = document.getElementById("eastern-conference")
+        
+          
+
             
-            const teamConf = document.createElement('option')
-            teamConf.value = team.conference
+            if (team.conference === "West") {
+                const teamWestOpt = document.createElement('option')
+
+                const teamWestSelect = document.getElementById("team-west-dropdown")
+                teamWestOpt.value = team.id
+                teamWestOpt.textContent = team.abbreviation
+
+                teamWestSelect.append(teamWestOpt)
+                console.log("inside west")
+
+            } 
             
-            if (teamConf.textContent === "West") {
-                rosterWest.append(team.city)
-            } else if (teamConf.textContent === "East") {
-                rosterEast.append(team.city)
+            else if(team.conference === "East") {
+                const teamEastOpt = document.createElement('option')
+
+                const teamEastSelect = document.getElementById("team-east-dropdown")
+                teamEastOpt.value = team.id
+                teamEastOpt.textContent = team.abbreviation
+
+                teamEastSelect.append(teamEastOpt)
+                console.log("inside east")
+
             }
-
-
-            console.log(teamConf.textContent)
 
     })
 
-
+console.log(teamsList)
 })
 }
 
@@ -52,6 +65,7 @@ function init () {
 // User can select one home team and one away team
 // When the team is selcted their logo will populate either home or away "court"
         // add event listener to "submit" that renders the team logo to the page 
+        // if both home and away slots have been filled the "play" button becomes active
 // Selecting the "PLAY" button activates a randomizer that picks a winning team
         // apply numbers to each team 1, 2 or 3 then have a randomizer math.random() run to select winner
 // An image of a trophy appears beside the winning team's logo
