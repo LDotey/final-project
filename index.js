@@ -8,7 +8,7 @@ function init () {
         teamsArray.forEach(team => {
             const teamCard = document.createElement('div')
             teamCard.classList = "card"
-            // teamsList.append(teamCard)
+            teamsList.append(teamCard)
 
             const teamName = document.createElement('h2')
             teamName.innerHTML = team.full_name
@@ -18,13 +18,17 @@ function init () {
             teamLogo.src = team.logo
             teamCard.append(teamLogo)
 
+            const retroLogo = document.createElement("img")
+            retroLogo.src = team.oldLogo
+
             const trophyCount = document.createElement('p')
             trophyCount.innerHTML = "number of trophies"
             teamCard.append(trophyCount)
 
-        
-          
-
+            const logoBtn = document.createElement('button')
+            logoBtn.textContent = "THROW BACK"
+            teamCard.append(logoBtn)
+         
             
             if (team.conference === "West") {
                 const teamWestOpt = document.createElement('option')
@@ -34,7 +38,6 @@ function init () {
                 teamWestOpt.textContent = team.abbreviation
 
                 teamWestSelect.append(teamWestOpt)
-                console.log("inside west")
 
             } 
             
@@ -46,13 +49,25 @@ function init () {
                 teamEastOpt.textContent = team.abbreviation
 
                 teamEastSelect.append(teamEastOpt)
-                console.log("inside east")
 
             }
+            logoBtn.addEventListener("click", (event) => {
+                if (logoBtn.textContent === "THROW BACK") {
+                    logoBtn.textContent = "STANDARD"
+                    teamLogo.style.display = "none"
+                    retroLogo.style.display = "block"
+                    teamCard.append(retroLogo)
+                } else {
+                    logoBtn.textContent === "STANDARD"
+                    logoBtn.textContent = "THROW BACK"
+                    retroLogo.style.display = "none"
+                    teamLogo.style.display = "block"
 
+                    
+                }
     })
-
-console.log(teamsList)
+       
+        })
 })
 }
 

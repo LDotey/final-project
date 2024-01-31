@@ -8,7 +8,8 @@
     "division": "Southeast",
     "full_name": "Atlanta Hawks",
     "name": "Hawks",
-    "logo": "LOGOS/ATL_LOGO.png"
+    "logo": "LOGOS/ATL_LOGO.png",
+    "oldLogo": "LOGOS/ATL_RETRO.webp"
     },
     {
     "id": 2,
