@@ -8,24 +8,27 @@ function init () {
         teamsArray.forEach(team => {
             const teamCard = document.createElement('div')
             teamCard.classList = "card"
-            teamsList.append(teamCard)
+            // teamsList.append(teamCard)
 
             const teamName = document.createElement('h2')
             teamName.innerHTML = team.full_name
             teamCard.append(teamName)
-
-            const teamLogo = document.createElement('img')
-            teamLogo.src = team.logo
-            teamCard.append(teamLogo)
-
-            const retroLogo = document.createElement("img")
-            retroLogo.src = team.oldLogo
-
+            
             const trophyCount = document.createElement('p')
             trophyCount.innerHTML = "number of trophies"
             teamCard.append(trophyCount)
 
+            const teamLogo = document.createElement('img')
+            teamLogo.classList = "team-logo"
+            teamLogo.src = team.logo
+            teamCard.append(teamLogo)
+
+            const retroLogo = document.createElement("img")
+            retroLogo.classList = "team-logo"
+            retroLogo.src = team.oldLogo
+
             const logoBtn = document.createElement('button')
+            logoBtn.classList = 
             logoBtn.textContent = "THROW BACK"
             teamCard.append(logoBtn)
          
@@ -61,11 +64,16 @@ function init () {
                     logoBtn.textContent === "STANDARD"
                     logoBtn.textContent = "THROW BACK"
                     retroLogo.style.display = "none"
-                    teamLogo.style.display = "block"
-
-                    
+                    teamLogo.style.display = "block"                  
                 }
     })
+            
+    
+    
+            const playBtn = document.querySelector("playbtn")
+            playBtn.addEventListener("click", () => {
+                // if both home and away team courts are filled playbtn activates
+            })
        
         })
 })

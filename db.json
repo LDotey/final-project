@@ -19,7 +19,9 @@
     "division": "Atlantic",
     "full_name": "Boston Celtics",
     "name": "Celtics",
-    "logo": "LOGOS/BOS_LOGO.png"
+    "logo": "LOGOS/BOS_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/BOS_RETRO.gif"
+
     },
     {
     "id": 3,
@@ -29,7 +31,8 @@
     "division": "Atlantic",
     "full_name": "Brooklyn Nets",
     "name": "Nets",
-    "logo": "LOGOS/BKN_LOGO.png"
+    "logo": "LOGOS/BKN_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/BKN_RETRO.png"
     },
     {
     "id": 4,
@@ -39,7 +42,8 @@
     "division": "Southeast",
     "full_name": "Charlotte Hornets",
     "name": "Hornets",
-    "logo": "LOGOS/CHA_LOGO.png"
+    "logo": "LOGOS/CHA_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/CHA_RETRO.gif"
     },
     {
     "id": 5,
@@ -49,7 +53,8 @@
     "division": "Central",
     "full_name": "Chicago Bulls",
     "name": "Bulls",
-    "logo": "LOGOS/CHI_LOGO.png"
+    "logo": "LOGOS/CHI_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/CHI_RETRO.png"
     },
     {
     "id": 6,
@@ -59,7 +64,8 @@
     "division": "Central",
     "full_name": "Cleveland Cavaliers",
     "name": "Cavaliers",
-    "logo": "LOGOS/CLE_LOGO.png"
+    "logo": "LOGOS/CLE_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/CLE_RETRO.png"
     },
     {
     "id": 7,
@@ -69,7 +75,8 @@
     "division": "Southwest",
     "full_name": "Dallas Mavericks",
     "name": "Mavericks",
-    "logo": "LOGOS/DAL_LOGO.png"
+    "logo": "LOGOS/DAL_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/DAL_RETRO.jpeg"
     },
     {
     "id": 8,
@@ -79,7 +86,8 @@
     "division": "Northwest",
     "full_name": "Denver Nuggets",
     "name": "Nuggets",
-    "logo": "LOGOS/DEN_LOGO.png"
+    "logo": "LOGOS/DEN_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/DEN_RETRO.png"
     },
     {
     "id": 9,
@@ -89,7 +97,8 @@
     "division": "Central",
     "full_name": "Detroit Pistons",
     "name": "Pistons",
-    "logo": "LOGOS/DET_LOGO.png"
+    "logo": "LOGOS/DET_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/DET_RETRO.png"
     },
     {
     "id": 10,
@@ -99,7 +108,8 @@
     "division": "Pacific",
     "full_name": "Golden State Warriors",
     "name": "Warriors",
-    "logo": "LOGOS/GSW_LOGO.png"
+    "logo": "LOGOS/GSW_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/GSW_RETRO.png"
     },
     {
     "id": 11,
@@ -109,7 +119,8 @@
     "division": "Southwest",
     "full_name": "Houston Rockets",
     "name": "Rockets",
-    "logo": "LOGOS/HOU_LOGO.png"
+    "logo": "LOGOS/HOU_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/HOU_RETRO.gif"
     },
     {
     "id": 12,
@@ -119,7 +130,8 @@
     "division": "Central",
     "full_name": "Indiana Pacers",
     "name": "Pacers",
-    "logo": "LOGOS/IND_LOGO.png"
+    "logo": "LOGOS/IND_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/IND_RETRO.jpeg"
     },
     {
     "id": 13,
@@ -129,7 +141,8 @@
     "division": "Pacific",
     "full_name": "LA Clippers",
     "name": "Clippers",
-    "logo": "LOGOS/LAC_LOGO.png"
+    "logo": "LOGOS/LAC_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/LAC_RETRO.png"
     },
     {
     "id": 14,
@@ -139,7 +152,8 @@
     "division": "Pacific",
     "full_name": "Los Angeles Lakers",
     "name": "Lakers",
-    "logo": "LOGOS/LAL_LOGO.png"
+    "logo": "LOGOS/LAL_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/LAL_RETRO.png"
     },
     {
     "id": 15,
@@ -149,7 +163,8 @@
     "division": "Southwest",
     "full_name": "Memphis Grizzlies",
     "name": "Grizzlies",
-    "logo": "LOGOS/MEM_LOGO.png"
+    "logo": "LOGOS/MEM_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/MEM_RETRO.png"
     },
     {
     "id": 16,
@@ -159,7 +174,8 @@
     "division": "Southeast",
     "full_name": "Miami Heat",
     "name": "Heat",
-    "logo": "LOGOS/MIA_LOGO.png"
+    "logo": "LOGOS/MIA_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/MIA_RETRO.jpeg"
     },
     {
     "id": 17,
@@ -169,7 +185,8 @@
     "division": "Central",
     "full_name": "Milwaukee Bucks",
     "name": "Bucks",
-    "logo": "LOGOS/MIL_LOGO.png"
+    "logo": "LOGOS/MIL_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/MIL_RETRO.png"
     },
     {
     "id": 18,
@@ -179,7 +196,8 @@
     "division": "Northwest",
     "full_name": "Minnesota Timberwolves",
     "name": "Timberwolves",
-    "logo": "LOGOS/MIN_LOGO.png"
+    "logo": "LOGOS/MIN_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/MIN_RETRO.png"
     },
     {
     "id": 19,
@@ -189,7 +207,8 @@
     "division": "Southwest",
     "full_name": "New Orleans Pelicans",
     "name": "Pelicans",
-    "logo": "LOGOS/NOP_LOGO.png"
+    "logo": "LOGOS/NOP_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/NOP_RETRO.png"
     },
     {
     "id": 20,
@@ -199,7 +218,8 @@
     "division": "Atlantic",
     "full_name": "New York Knicks",
     "name": "Knicks",
-    "logo": "LOGOS/NYK_LOGO.png"
+    "logo": "LOGOS/NYK_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/NYK_RETRO.jpeg"
     },
     {
     "id": 21,
@@ -209,7 +229,8 @@
     "division": "Northwest",
     "full_name": "Oklahoma City Thunder",
     "name": "Thunder",
-    "logo": "LOGOS/OKC_LOGO.png"
+    "logo": "LOGOS/OKC_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/OKC_RETRO.png"
     },
     {
     "id": 22,
@@ -219,7 +240,8 @@
     "division": "Southeast",
     "full_name": "Orlando Magic",
     "name": "Magic",
-    "logo": "LOGOS/ORL_LOGO.png"
+    "logo": "LOGOS/ORL_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/ORL_RETRO.png"
     },
     {
     "id": 23,
@@ -229,7 +251,8 @@
     "division": "Atlantic",
     "full_name": "Philadelphia 76ers",
     "name": "76ers",
-    "logo": "LOGOS/PHI_LOGO.png"
+    "logo": "LOGOS/PHI_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/PHI_RETRO.png"
     },
     {
     "id": 24,
@@ -239,7 +262,8 @@
     "division": "Pacific",
     "full_name": "Phoenix Suns",
     "name": "Suns",
-    "logo": "LOGOS/PHX_LOGO.png"
+    "logo": "LOGOS/PHX_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/PHX_RETRO.jpeg"
     },
     {
     "id": 25,
@@ -249,7 +273,8 @@
     "division": "Northwest",
     "full_name": "Portland Trail Blazers",
     "name": "Trail Blazers",
-    "logo": "LOGOS/POR_LOGO.png"
+    "logo": "LOGOS/POR_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/POR_RETRO.png"
     },
     {
     "id": 26,
@@ -259,7 +284,8 @@
     "division": "Pacific",
     "full_name": "Sacramento Kings",
     "name": "Kings",
-    "logo": "LOGOS/SAC_LOGO.png"
+    "logo": "LOGOS/SAC_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/SAC_RETRO.jpg"
     },
     {
     "id": 27,
@@ -269,7 +295,8 @@
     "division": "Southwest",
     "full_name": "San Antonio Spurs",
     "name": "Spurs",
-    "logo": "LOGOS/SAS_LOGO.png"
+    "logo": "LOGOS/SAS_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/SAS_RETRO.webp"
     },
     {
     "id": 28,
@@ -279,7 +306,8 @@
     "division": "Atlantic",
     "full_name": "Toronto Raptors",
     "name": "Raptors",
-    "logo": "LOGOS/TOR_LOGO.png"
+    "logo": "LOGOS/TOR_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/TOR_RETRO.png"
     },
     {
     "id": 29,
@@ -289,7 +317,8 @@
     "division": "Northwest",
     "full_name": "Utah Jazz",
     "name": "Jazz",
-    "logo": "LOGOS/UTA_LOGO.png"
+    "logo": "LOGOS/UTA_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/UTA_RETRO.png"
     },
     {
     "id": 30,
@@ -299,7 +328,8 @@
     "division": "Southeast",
     "full_name": "Washington Wizards",
     "name": "Wizards",
-    "logo": "LOGOS/WAS_LOGO.png"
+    "logo": "LOGOS/WAS_LOGO.png",
+    "oldLogo":"RETRO_LOGOS/WAS_RETRO.png"
     }
     ],
     "meta": {
