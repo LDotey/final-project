@@ -69,7 +69,10 @@ function init () {
     })
             
             })
-       
+            const homeCourt = document.querySelector('#home-court')
+            // homeCourt.classList = "card"
+            // homeCourt.textContent = "HOME"
+            homeCourt.append(teamCard)
         })
         const playBtn = document.querySelector('.button')
         console.log(playBtn)
@@ -78,6 +81,11 @@ function init () {
             const randomElement = myArray[Math.floor(Math.random()*myArray.length)]
             console.log(randomElement)
 })
+        // const homeCourt = document.querySelector('#home-court')
+        // // homeCourt.classList = "card"
+        // homeCourt.textContent = "HOME"
+        // homeCourt.append(teamCard)
+
 }
 
 // On page open, 2 drop down forms are shown containing each conference's teams
