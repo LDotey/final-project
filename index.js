@@ -68,14 +68,15 @@ function init () {
                 }
     })
             
-    
-    
-            const playBtn = document.querySelector("playbtn")
-            playBtn.addEventListener("click", () => {
-                // if both home and away team courts are filled playbtn activates
             })
        
         })
+        const playBtn = document.querySelector('.button')
+        console.log(playBtn)
+        playBtn.addEventListener("click", () => {
+            const myArray = ['winner','loser']
+            const randomElement = myArray[Math.floor(Math.random()*myArray.length)]
+            console.log(randomElement)
 })
 }
 
