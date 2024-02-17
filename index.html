@@ -7,19 +7,15 @@
     <link rel="stylesheet" href="index.css" />
 </head>
 <style>
-    /* body  {
-      background-image: url("LOGOS/bball_court.jpeg");
-      max-height: 100%;
-      max-width: 100%;
-      object-fit: fill;
-      background-repeat: no-repeat;
-      
-    } */
+    
     </style>
 <body>
-    <div class="western-dropdown"></div>
+    <div id="conference-container">
+        <div class="western-dropdown"></div>
         <!-- <button class="west-dropbtn"> PICK A TEAM ! </button> -->
-        <label for = "team-west-select">Western Conference</label>
+        <label for = "team-west-select" >Western Conference</label>
+        
+      
         <select id = "team-west-dropdown" name = "team-select"> </select>
 
     <div class="eastern-dropdown"></div>
@@ -27,24 +23,28 @@
         <label for = "team-east-select">Eastern Conference</label>
         <select id = "team-east-dropdown" name = "team-select"></select>
 
+    </div>
+    
     <div class="playbtn"></div>
         <button class="button"> PLAY GAME ! </button>
-        <!-- <select id = "play-button"></select> -->
-
-
 
     <div id = "team-collection"></div>
 
-    <!-- Court for home team -->
-    <div id="home-court" class="court">
-        <h2>Home</h2>
-    </div>
 
-    <!-- Court for visiting team -->
-    <div id="visiting-court" class="court">
-        <h2>Away</h2>
-    </div>
+    <div id="court-container">
+        <div id="home-court" class="court">      
+            <h2>Home</h2>
+            <div></div>
+        </div>
     
+        <div id="away-court" class="court">
+            <h2>Away</h2>
+        <div></div>
+        </div>
+
+    </div>
+   
+
     <script src="index.js"> </script>
 </body>
 </html>
