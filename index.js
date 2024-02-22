@@ -5,8 +5,114 @@ function init () {
     .then((resp) => resp.json())
     .then((teamsArray) => {
         const teamsList = document.getElementById("team-collection")
-        teamsArray.forEach(team => {
-            // const teamCard = document.createElement('div')
+        teamsArray.forEach(team => {           
+            if (team.conference === "West") {
+                const teamWestOpt = document.createElement('option')
+
+                const teamWestSelect = document.getElementById("team-west-dropdown")
+                teamWestOpt.value = team.id
+                teamWestOpt.textContent = team.abbreviation
+
+                teamWestSelect.append(teamWestOpt)
+
+            } 
+            
+            else if(team.conference === "East") {
+                const teamEastOpt = document.createElement('option')
+
+                const teamEastSelect = document.getElementById("team-east-dropdown")
+                teamEastOpt.value = team.id
+                teamEastOpt.textContent = team.abbreviation
+
+                teamEastSelect.append(teamEastOpt)
+
+            }           
+        })
+        // const homeTeamContainer = document.getElementById('home-court')
+        const selectedWestTeam = document.getElementById('team-west-dropdown')
+
+        // const awayTeamContainer = document.getElementById('away-court')
+        const selectedTeamEast = document.getElementById('team-east-dropdown')
+
+        function handleEvent(event){
+            const homeCardContainer = document.getElementById('home-card-container')
+            const awayCardContainer = document.getElementById('away-card-container')
+
+            // const emptyHomeDiv = homeTeamContainer.lastElementChild
+            // const emptyAwayDiv = awayTeamContainer.lastElementChild
+            const teamCard = document.createElement('div')
+            teamCard.classList = "card"
+            // homeTeamContainer.replaceChild(teamCard,emptyHomeDiv)
+            // awayTeamContainer.replaceChild(teamCard,emptyAwayDiv)
+
+            // console.log(emptyHomeDiv)
+
+           
+
+            let selectedTeamId = event.target.value
+            let selectedTeamObj = teamsArray.find((team) => team.id == selectedTeamId)
+            
+            if (homeCardContainer.innerHTML == "") {
+                console.log("poop")
+                homeCardContainer.append(teamCard)
+                
+            } else if(awayCardContainer.innerHTML == ""){               
+                awayCardContainer.append(teamCard)
+            }
+            const teamName = document.createElement('h2')
+            teamName.innerHTML = selectedTeamObj.full_name
+            teamCard.append(teamName)
+            
+            const trophyCount = document.createElement('p')
+            trophyCount.innerHTML = "number of trophies"
+            teamCard.append(trophyCount)
+
+            const teamLogo = document.createElement('img')
+            teamLogo.classList = "team-logo"
+            teamLogo.src = selectedTeamObj.logo
+            teamCard.append(teamLogo)
+
+            const retroLogo = document.createElement("img")
+            retroLogo.classList = "team-logo"
+            retroLogo.src = selectedTeamObj.oldLogo
+
+            const logoBtn = document.createElement('button')
+            logoBtn.classList = 
+            logoBtn.textContent = "THROW BACK LOGO"
+            teamCard.append(logoBtn)
+            console.log(selectedTeamObj)
+
+            logoBtn.addEventListener("click", (event) => {
+                if (logoBtn.textContent === "THROW BACK") {
+                    logoBtn.textContent = "STANDARD"
+                    teamLogo.style.display = "none"
+                    retroLogo.style.display = "block"
+                    teamCard.append(retroLogo)
+                } else {
+                    logoBtn.textContent === "STANDARD"
+                    logoBtn.textContent = "THROW BACK"
+                    retroLogo.style.display = "none"
+                    teamLogo.style.display = "block"                  
+                }
+            })
+        }
+
+        selectedTeamEast.addEventListener("change", handleEvent)
+
+        selectedWestTeam.addEventListener("change", handleEvent)
+        
+          
+        })
+        const playBtn = document.querySelector('.button')
+        // console.log(playBtn)
+        playBtn.addEventListener("click", (event) => {
+            const myArray = ['winner','loser']
+            const randomElement = myArray[Math.floor(Math.random()*myArray.length)]
+            console.log(randomElement)
+            
+        })
+    }     
+     // const teamCard = document.createElement('div')
             // teamCard.classList = "card"
             // // teamsList.append(teamCard)
 
@@ -30,102 +136,55 @@ function init () {
             // const logoBtn = document.createElement('button')
             // logoBtn.classList = 
             // logoBtn.textContent = "THROW BACK"
+            // teamCard.append(logoBtn)   
+
+                // const emptyHomeDiv = homeTeamContainer.lastElementChild
+            // const teamCard = document.createElement('div')
+            // homeTeamContainer.replaceChild(teamCard,emptyHomeDiv)
+            
+            // const homeTeamId = event.target.value
+            // const homeTeamObj = teamsArray.find((team) => team.id == homeTeamId)
+            // teamCard.classList = "card"
+            // homeTeamContainer.append(teamCard)
+        
+        
+
+            // const teamName = document.createElement('h2')
+            // teamName.innerHTML = homeTeamObj.full_name
+            // teamCard.append(teamName)
+            
+            // const trophyCount = document.createElement('p')
+            // trophyCount.innerHTML = "number of trophies"
+            // teamCard.append(trophyCount)
+
+            // const teamLogo = document.createElement('img')
+            // teamLogo.classList = "team-logo"
+            // teamLogo.src = homeTeamObj.logo
+            // teamCard.append(teamLogo)
+
+            // const retroLogo = document.createElement("img")
+            // retroLogo.classList = "team-logo"
+            // retroLogo.src = homeTeamObj.oldLogo
+
+            // const logoBtn = document.createElement('button')
+            // logoBtn.classList = 
+            // logoBtn.textContent = "THROW BACK LOGO"
             // teamCard.append(logoBtn)
-         
-            
-            if (team.conference === "West") {
-                const teamWestOpt = document.createElement('option')
+            // console.log(homeTeamObj)
 
-                const teamWestSelect = document.getElementById("team-west-dropdown")
-                teamWestOpt.value = team.id
-                teamWestOpt.textContent = team.abbreviation
-
-                teamWestSelect.append(teamWestOpt)
-
-            } 
-            
-            else if(team.conference === "East") {
-                const teamEastOpt = document.createElement('option')
-
-                const teamEastSelect = document.getElementById("team-east-dropdown")
-                teamEastOpt.value = team.id
-                teamEastOpt.textContent = team.abbreviation
-
-                teamEastSelect.append(teamEastOpt)
-
-            }
-            
-            
-        })
-        const homeTeamContainer = document.getElementById('home-court')
-        const selectedWestTeam = document.getElementById('team-west-dropdown')
-
-        const awayTeamContainer = document.getElementById('away-court')
-        const selectedTeamEast = document.getElementById('team-east-dropdown')
-
-        selectedTeamEast.addEventListener("change", () => {})
-
-        selectedWestTeam.addEventListener("change", (event) => {
-            const emptyHomeDiv = homeTeamContainer.lastElementChild
-            const teamCard = document.createElement('div')
-            homeTeamContainer.replaceChild(teamCard,emptyHomeDiv)
-            
-            const homeTeamId = event.target.value
-            const homeTeamObj = teamsArray.find((team) => team.id == homeTeamId)
-            teamCard.classList = "card"
-            homeTeamContainer.append(teamCard)
-        
-        
-
-            const teamName = document.createElement('h2')
-            teamName.innerHTML = homeTeamObj.full_name
-            teamCard.append(teamName)
-            
-            const trophyCount = document.createElement('p')
-            trophyCount.innerHTML = "number of trophies"
-            teamCard.append(trophyCount)
-
-            const teamLogo = document.createElement('img')
-            teamLogo.classList = "team-logo"
-            teamLogo.src = homeTeamObj.logo
-            teamCard.append(teamLogo)
-
-            const retroLogo = document.createElement("img")
-            retroLogo.classList = "team-logo"
-            retroLogo.src = homeTeamObj.oldLogo
-
-            const logoBtn = document.createElement('button')
-            logoBtn.classList = 
-            logoBtn.textContent = "THROW BACK LOGO"
-            teamCard.append(logoBtn)
-            console.log(homeTeamObj)
-
-            logoBtn.addEventListener("click", (event) => {
-                if (logoBtn.textContent === "THROW BACK") {
-                    logoBtn.textContent = "STANDARD"
-                    teamLogo.style.display = "none"
-                    retroLogo.style.display = "block"
-                    teamCard.append(retroLogo)
-                } else {
-                    logoBtn.textContent === "STANDARD"
-                    logoBtn.textContent = "THROW BACK"
-                    retroLogo.style.display = "none"
-                    teamLogo.style.display = "block"                  
-                }
-            })
-        })  
-        })
-        const playBtn = document.querySelector('.button')
-        // console.log(playBtn)
-        playBtn.addEventListener("click", (event) => {
-            const myArray = ['winner','loser']
-            const randomElement = myArray[Math.floor(Math.random()*myArray.length)]
-            console.log(randomElement)
-            
-        })
-        
-       
-}
+            // logoBtn.addEventListener("click", (event) => {
+            //     if (logoBtn.textContent === "THROW BACK") {
+            //         logoBtn.textContent = "STANDARD"
+            //         teamLogo.style.display = "none"
+            //         retroLogo.style.display = "block"
+            //         teamCard.append(retroLogo)
+            //     } else {
+            //         logoBtn.textContent === "STANDARD"
+            //         logoBtn.textContent = "THROW BACK"
+            //         retroLogo.style.display = "none"
+            //         teamLogo.style.display = "block"                  
+            //     }
+            // })
 
 // On page open, 2 drop down forms are shown containing each conference's teams
         // create drop down lists
