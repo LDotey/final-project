@@ -6,3 +6,5 @@ Team Cards show team name and team logo with an option to select a "throw back" 
 Whether you are a basketball old head or just a fan of retro design this project takes a trip down memory lane with affection and humour.
 
 The team data was sourced at https://www.balldontlie.io/api/v1/teams?page=1
+Throw back logos were obtained from https://nbahoopsonline.com/History/logos.html
+Standard logos were obtained from https://www.stickpng.com/cat/sports/basketball/nba-teams?page=1
