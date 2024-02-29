@@ -3,6 +3,7 @@ body {
   font-style: italic;
   padding: 25px;
   background: url("LOGOS/bball_court.jpeg");
+  max-width: 1000px;
   background-size: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,11 +44,11 @@ body {
 #court-container {
   display: flex;
   justify-content: space-evenly;
-  /* gap: 450px; */
-  margin: 20px;
+  gap: 450px;
+  margin: 50px;
 }
 #conference-container {
   display: flex;
   justify-content: space-evenly;
-  gap: 50px;
+  gap: 100px;
 }
