@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 450px;
-  margin: 50px;
+  margin: 100px;
 }
 #conference-container {
   display: flex;
